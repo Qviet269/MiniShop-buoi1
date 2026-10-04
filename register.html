@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký - MiniShop</title>
+</head>
+<body>
+    <header class="site-header">
+        <h1>MiniShop</h1>
+        <nav class="main-nav" aria-label="Điều hướng chính">
+            <a href="index.html">Trang chủ</a> |
+            <a href="about.html">Giới thiệu</a> |
+            <a href="product.html">Sản phẩm</a> |
+            <a href="cart.html">Giỏ hàng</a> |
+            <a href="contact.html">Liên hệ</a> |
+            <a href="login.html">Đăng nhập</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Tạo tài khoản MiniShop</h2>
+        <p>Điền thông tin bên dưới để đăng ký tài khoản.</p>
+
+        <form action="#" method="post">
+            <p>
+                <label for="full-name">Họ và tên:</label><br>
+                <input type="text" id="full-name" name="full_name" autocomplete="name" required>
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="phone">Số điện thoại:</label><br>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[0-9+() .-]{9,15}" required>
+            </p>
+            <p>
+                <label for="password">Mật khẩu:</label><br>
+                <input type="password" id="password" name="password" autocomplete="new-password" minlength="8" required>
+            </p>
+            <p>
+                <label for="confirm-password">Nhập lại mật khẩu:</label><br>
+                <input type="password" id="confirm-password" name="confirm_password" autocomplete="new-password" minlength="8" required>
+            </p>
+            <p>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Tôi đồng ý với các điều khoản sử dụng.</label>
+            </p>
+            <button type="submit">Đăng ký</button>
+        </form>
+
+        <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a>.</p>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 MiniShop. Dự án thực hành lập trình web.</p>
+    </footer>
+</body>
+</html>
